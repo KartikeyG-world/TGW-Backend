@@ -9,6 +9,8 @@ app.post("/create-post" ,upload.single(`image`) , async (req , res) => {
     console.log(req.body);
     console.log(req.file);
 })
-
+app.get("/create-post" , upload.single(`image`) , async(req,res) =>{
+    console.log(req.body)
+})
 
 module.exports = app;
