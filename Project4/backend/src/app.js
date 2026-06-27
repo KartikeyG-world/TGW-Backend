@@ -33,4 +33,7 @@ app.get(`/posts` , async (req , res) =>{
     })
 })
 
+
+console.log("Successfully Executed");
+
 module.exports = app;
