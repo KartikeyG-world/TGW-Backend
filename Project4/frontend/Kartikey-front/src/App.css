@@ -1,4 +1,68 @@
-*{
-    background-color:black;
-    color: white;
+* {
+  background-color: black;
+  color: white;
+}
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  color: white;
+}
+.create-post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* gap: 0.1rem; */
+}
+.create-post-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.create-post-section input,
+.create-post-section textarea{
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.create-post-section form button{
+    background-color: blue;
+    padding: 0.6rem;
+    font-weight: bold;
+}
+.feed-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: #5d5d5e;
+    padding: 20px;
+}
+
+.post-card{
+    background-color: rgb(34, 33, 33);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom : 20px;
+    width: 400px;
+}
+.post-card img{
+    max-width: 100%;
+    border-radius : 8px;
+    margin-top: 10px;
 }

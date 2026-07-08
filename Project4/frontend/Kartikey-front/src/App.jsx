@@ -1,10 +1,17 @@
-import './App.css'
-import {BrowserRouter as Router , Route} from "react-router-dom"
-function App() {
+import React from 'react'
+import "./App.css"
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
+import CreatePost from './pages/CreatePost'
+import Feed from './pages/Feed'
+
+const App = () => {
   return (
-    <div>
-      Hello 
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/create-post' element = {<CreatePost/>} />
+        <Route path='/feed' element={<Feed/>}/>
+      </Routes>
+    </Router>
   )
 }
 
